@@ -17,8 +17,8 @@ If an invalid argument is passed to the logger, the above message should be disp
 ## Monitored file access activities  
 The list of monitored library calls is shown below.  
 ``` 
-chmod chown close creat fclose fopen fread fwrite  
-open read remove rename tmpfile write
+chmod  chown  close   creat   fclose   fopen  fread  fwrite  
+open   read   remove  rename  tmpfile  write
 ```    
  
 
