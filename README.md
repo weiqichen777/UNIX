@@ -17,8 +17,8 @@ If an invalid argument is passed to the *logger*, the above message should be di
 ### Monitored file access activities  
 The list of monitored library calls is shown below.  
 ``` 
-**chmod**  **chown**  close   creat   fclose   fopen  fread  fwrite  
-**open**   **read**   remove  rename  tmpfile  write
+chmod  chown  close   creat   fclose   fopen  fread  fwrite  
+open   read   remove  rename  tmpfile  write
 ```    
 
 ## hw3: Extend the Mini Lib C to Handle Signals  
@@ -85,11 +85,8 @@ disasm or d [running]: Disassemble instructions in a file or a memory region. Th
 * **list** or **l [any]**: List break points, which contains index numbers (for deletion) and addresses.
 * **load** [not **loaded**]: Load a program into the debugger. When a program is loaded, you have to print out the address of entry point.
 * **run** or **r [loaded and running]**: Run the program. If the program is already running, show a warning message and continue the execution. If the program is loaded, start the program and continue the execution.
-* **vmmap** or **m [running]**: Show memory layout for a running program. If a program is not running, you can simply display an error message. The memory layout is:  
-```  
-[address] [perms] [offset] [pathname]  
-``` 
-Check the demonstration section for the sample output format.
+* **vmmap** or **m [running]**: Show memory layout for a running program. If a program is not running, you can simply display an error message. The memory layout is: `[address] [perms] [offset] [pathname]` 
+ Check the demonstration section for the sample output format.
 * **set** or **s [running]**: Set the value of a register
 * **si [running]**: Run a single instruction, and step into function calls.
 * **start [loaded]**: Start the program and stop at the first instruction.  
